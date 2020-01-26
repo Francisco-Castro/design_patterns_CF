@@ -1,4 +1,4 @@
-public class Jaguar extends Animal {
+public class Jaguar extends Animal implements IFeline{
 
     int age;
     float weight;
@@ -32,5 +32,20 @@ public class Jaguar extends Animal {
     @Override
     public void sleep() {
         System.out.println("The jaguar is sleeping");
+    }
+
+    @Override
+    public void roar() {
+        System.out.println("The jaguar is roaring");
+    }
+
+    @Override
+    public void meow() {
+        throw new UnsupportedOperationException("The jaguar is NOT able to meow");
+    }
+
+    @Override
+    public void hunt() {
+        System.out.println("The jaguar is hunting");
     }
 }

@@ -9,6 +9,10 @@ public class MainAnimal {
         jaguar.eat();
         jaguar.sleep();
 
+        jaguar.roar();
+        jaguar.meow();
+        jaguar.hunt();
+
 
     }
 }
