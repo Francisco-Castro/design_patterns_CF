@@ -8,6 +8,11 @@ public class Jaguar extends Animal implements IFeline{
         this.weight = weight;
     }
 
+    public Jaguar() {
+        this.setAge(0);
+        this.setWeight(0);
+    }
+
     public int getAge() {
         return age;
     }
@@ -40,12 +45,15 @@ public class Jaguar extends Animal implements IFeline{
     }
 
     @Override
-    public void meow() {
-        throw new UnsupportedOperationException("The jaguar is NOT able to meow");
+    public void hunt() {
+        System.out.println("The jaguar is hunting");
     }
 
     @Override
-    public void hunt() {
-        System.out.println("The jaguar is hunting");
+    public String toString() {
+        return "Jaguar{" +
+                "age=" + age +
+                ", weight=" + weight +
+                '}';
     }
 }

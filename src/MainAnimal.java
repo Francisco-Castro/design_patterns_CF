@@ -10,8 +10,11 @@ public class MainAnimal {
         jaguar.sleep();
 
         jaguar.roar();
-        jaguar.meow();
         jaguar.hunt();
+
+        Jaguar jaguar1 = new Jaguar();
+
+        System.out.println(jaguar1);
 
 
     }
