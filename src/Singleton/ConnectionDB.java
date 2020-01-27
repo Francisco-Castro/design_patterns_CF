@@ -10,7 +10,8 @@ public class ConnectionDB {
     }
 
     // Step2. Generate an static method that return an object of the same type.
-    public static ConnectionDB getConnection() {
+    // Add synchronized to dont affect the only one instance
+    public synchronized static ConnectionDB getConnection() {
 
         if (connectionDB == null) { // No instantiated
             connectionDB = new ConnectionDB();
