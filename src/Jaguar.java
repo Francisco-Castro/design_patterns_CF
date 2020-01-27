@@ -45,6 +45,11 @@ public class Jaguar extends Animal implements IFeline{
     }
 
     @Override
+    public void meow() {
+        throw new UnsupportedOperationException("The jaguar NOT meow");
+    }
+
+    @Override
     public void hunt() {
         System.out.println("The jaguar is hunting");
     }
