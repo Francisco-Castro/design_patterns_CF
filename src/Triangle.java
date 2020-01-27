@@ -1,9 +1,9 @@
-public class Rectangle implements IFigure{
+public class Triangle implements IFigure{
 
     private float base;
     private float height;
 
-    public Rectangle(float base, float height) {
+    public Triangle(float base, float height) {
         this.base = base;
         this.height = height;
     }
@@ -26,7 +26,7 @@ public class Rectangle implements IFigure{
 
     @Override
     public String toString() {
-        return "Rectangle{" +
+        return "Triangle{" +
                 "base=" + base +
                 ", height=" + height +
                 '}';
@@ -34,6 +34,6 @@ public class Rectangle implements IFigure{
 
     @Override
     public float area() {
-        return this.base * this.height;
+        return (this.base * this.height) / 2;
     }
 }
