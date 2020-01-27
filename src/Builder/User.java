@@ -8,6 +8,12 @@ public class User {
 
     private boolean availableContact; // Optional; True: email, tel, add activated. False: no available those before.
 
+    /**
+     * Exercise: add attributes: methodPay and token.
+     * String methodPay: Only assign a value if email, add, and tel have a value.
+     * String token:  Once methodPay has a value so enable methodPay
+     * */
+
     // Optional Attributes
     private String email;
     private String telephone;
