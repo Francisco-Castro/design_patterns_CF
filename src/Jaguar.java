@@ -1,7 +1,7 @@
-public class Jaguar extends Animal implements IFeline{
+public class Jaguar extends Animal implements IFelineWild {
 
-    int age;
-    float weight;
+    private int age;
+    private float weight;
 
     public Jaguar(int age, float weight) {
         this.age = age;
@@ -40,16 +40,6 @@ public class Jaguar extends Animal implements IFeline{
     }
 
     @Override
-    public void roar() {
-        System.out.println("The jaguar is roaring");
-    }
-
-    @Override
-    public void meow() {
-        throw new UnsupportedOperationException("The jaguar NOT meow");
-    }
-
-    @Override
     public void hunt() {
         System.out.println("The jaguar is hunting");
     }
@@ -60,5 +50,10 @@ public class Jaguar extends Animal implements IFeline{
                 "age=" + age +
                 ", weight=" + weight +
                 '}';
+    }
+
+    @Override
+    public void roar() {
+        System.out.println("The jaguar is roaring");
     }
 }
