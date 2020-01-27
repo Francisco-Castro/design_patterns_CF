@@ -3,9 +3,9 @@ public class Computer {
     private KeyBoard keyBoard;
     private Mouse mouse;
 
-    public Computer() {
-        this.keyBoard = new KeyBoard();
-        this.mouse = new Mouse();
+    public Computer(KeyBoard keyBoard, Mouse mouse) {
+        this.keyBoard = keyBoard;
+        this.mouse = mouse;
     }
 
     public void turnOn() {
