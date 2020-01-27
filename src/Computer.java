@@ -1,7 +1,7 @@
 public class Computer {
 
-    private KeyBoard keyBoard;
-    private Mouse mouse;
+    private IKeyboard keyBoard;
+    private IMouse mouse;
 
     public Computer(KeyBoard keyBoard, Mouse mouse) {
         this.keyBoard = keyBoard;
